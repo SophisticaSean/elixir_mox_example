@@ -9,18 +9,11 @@ This repo is a barebones example of how to use [Mox](https://github.com/platafor
 I found the existing articles and instructions were insufficient to get me started using Mox so I have created a barebones project
 to make it easier on the next person who would like to use this library.
 
-## Installation
+## How
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `mox_example` to your list of dependencies in `mix.exs`:
+Run `mix test` and you'll see a mocked HTTP call tested without making the HTTP call.
 
-```elixir
-def deps do
-  [
-    {:mox_example, "~> 0.1.0"}
-  ]
-end
-```
+Run `iex -S mix` and then `MoxExample.post_name("derp")` and you'll see the HTTP request go through!
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
