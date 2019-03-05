@@ -9,7 +9,7 @@ defmodule MoxExampleTest do
   test "posts name" do
     name = "Jim"
     ExampleAPIMock |>
-			expect(:api_post, fn ^name, nil, nil -> {:ok, nil} end)
+			expect(:api_post, fn ^name, [], [] -> {:ok, nil} end)
 
 		assert MoxExample.post_name(name) == {:ok, nil}
   end
